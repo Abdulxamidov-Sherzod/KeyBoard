@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		095A788FAEDF4605FADF31130993D68E /* PhoneFormattedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37EACFE4EACDEC50191B0EB78850FC9 /* PhoneFormattedTextField.swift */; };
+		0E912CFC384937C24003D0AEA4680122 /* FormattedTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D36DA2BDF23F1D8424100825CBD8B8 /* FormattedTextFieldDelegate.swift */; };
+		121059E9F0396EBFC17798B2CBD3C58C /* ConfigurationRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1EC997F1F7036FBA675C427F2B4977 /* ConfigurationRepo.swift */; };
+		1CE1445806AC3822AC54AC28A39F7A4D /* SwiftPhoneNumberFormatter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6F28A046F67F1D8E14875FCB60BE4D /* SwiftPhoneNumberFormatter-dummy.m */; };
+		2A039A4165975BE73305F2AE08CEFEAC /* Pods-KeyBoard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 875D386DBF07964D7BEBF5CE6EF60DB3 /* Pods-KeyBoard-dummy.m */; };
+		302BE617DC939201AD868987B38B4AB1 /* UnderKeyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E42732312A035B89740A4680607BFF /* UnderKeyboard-dummy.m */; };
+		4BA86130D1D36797F8E502CBD3045C87 /* UnderKeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7B2319A7CEBFE615313B0FE909144 /* UnderKeyboardObserver.swift */; };
+		765C35FDDA7B61DA2E0B7802B8F29CE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8971FFF9BE0C4A747A272A78BFA2D443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8ED40834988B1AA754132FF523354330 /* PhoneFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B8A0F72440870C0541B05137F62887 /* PhoneFormatter.swift */; };
+		9990FAAC6E627E6F7A80108D06C30402 /* PhoneFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06F3A9CB68FEFC5BD0956417C9279B /* PhoneFormat.swift */; };
+		9A6A02703BC69A991DC82BCAA10C5AFA /* Pods-KeyBoard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 096118AC579C714BFEDB307CC213F0FD /* Pods-KeyBoard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A36A2152DB20B607A8EF0875B065DF5B /* UnderKeyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86311893BEBD7DCA0F41A9CEDDA00FE4 /* UnderKeyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D61D46BB8A99BF850C3B2B08472320B7 /* UnderKeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA897D0600FD08499898555EC38D1A7 /* UnderKeyboardLayoutConstraint.swift */; };
+		DAF15674E06913314439E974FD898BB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F04A22741DE1BB150342A06ED4B211D2 /* SwiftPhoneNumberFormatter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE1F0CF973EBA0F1F3207BE93CE8C7BF /* SwiftPhoneNumberFormatter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1070155AE277AA7E594D7E4C18306849 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A85581F0B02E795C37EFCC40F4AC3BE3;
+			remoteInfo = UnderKeyboard;
+		};
+		35447C43296A6087BB5D2874253BFBDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8010486C81DF33F6D5B2D0A49F99327;
+			remoteInfo = SwiftPhoneNumberFormatter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0763159C65335E88C333BC501398030C /* Pods-KeyBoard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeyBoard-acknowledgements.plist"; sourceTree = "<group>"; };
+		096118AC579C714BFEDB307CC213F0FD /* Pods-KeyBoard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KeyBoard-umbrella.h"; sourceTree = "<group>"; };
+		158C964EB6A530B528707B37E3C02FE4 /* UnderKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UnderKeyboard.debug.xcconfig; sourceTree = "<group>"; };
+		15E8928CF9948E8115722902373C9205 /* Pods-KeyBoard */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-KeyBoard"; path = Pods_KeyBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		160A1964429C5AFBDE42B86566045BB3 /* Pods-KeyBoard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KeyBoard-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1B27DECC16E4216C65D6C17FCF9A496F /* SwiftPhoneNumberFormatter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftPhoneNumberFormatter.modulemap; sourceTree = "<group>"; };
+		1B31E3D02526D4D0A1429BBEDF41D363 /* Pods-KeyBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeyBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		25E42732312A035B89740A4680607BFF /* UnderKeyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UnderKeyboard-dummy.m"; sourceTree = "<group>"; };
+		2782F98C017E7EEC297024F8CC663F42 /* SwiftPhoneNumberFormatter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftPhoneNumberFormatter-prefix.pch"; sourceTree = "<group>"; };
+		3D003253097148307C3A3B0F3CCECAFB /* SwiftPhoneNumberFormatter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftPhoneNumberFormatter.release.xcconfig; sourceTree = "<group>"; };
+		47D36DA2BDF23F1D8424100825CBD8B8 /* FormattedTextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormattedTextFieldDelegate.swift; path = PhoneNumberFormatter/Sources/FormattedTextFieldDelegate.swift; sourceTree = "<group>"; };
+		4B78EDE1CC8750E37B63388E3EB262E0 /* SwiftPhoneNumberFormatter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftPhoneNumberFormatter-Info.plist"; sourceTree = "<group>"; };
+		5AB7B2319A7CEBFE615313B0FE909144 /* UnderKeyboardObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnderKeyboardObserver.swift; path = UnderKeyboard/UnderKeyboardObserver.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7A6F28A046F67F1D8E14875FCB60BE4D /* SwiftPhoneNumberFormatter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftPhoneNumberFormatter-dummy.m"; sourceTree = "<group>"; };
+		86311893BEBD7DCA0F41A9CEDDA00FE4 /* UnderKeyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnderKeyboard-umbrella.h"; sourceTree = "<group>"; };
+		875D386DBF07964D7BEBF5CE6EF60DB3 /* Pods-KeyBoard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KeyBoard-dummy.m"; sourceTree = "<group>"; };
+		8F26E516543FEC36EF5201E772E3EF5F /* Pods-KeyBoard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KeyBoard.modulemap"; sourceTree = "<group>"; };
+		8FA897D0600FD08499898555EC38D1A7 /* UnderKeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnderKeyboardLayoutConstraint.swift; path = UnderKeyboard/UnderKeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		90B8A0F72440870C0541B05137F62887 /* PhoneFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneFormatter.swift; path = PhoneNumberFormatter/Sources/PhoneFormatter.swift; sourceTree = "<group>"; };
+		9D01AF93354FCDB5C4332DD1CBE584FA /* Pods-KeyBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeyBoard.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B793F382517A9AB8806318DD243E87DC /* SwiftPhoneNumberFormatter */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftPhoneNumberFormatter; path = SwiftPhoneNumberFormatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB00B863D8C09BE159707D54346513C2 /* Pods-KeyBoard-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeyBoard-Info.plist"; sourceTree = "<group>"; };
+		BD1EC997F1F7036FBA675C427F2B4977 /* ConfigurationRepo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfigurationRepo.swift; path = PhoneNumberFormatter/Sources/ConfigRepo/ConfigurationRepo.swift; sourceTree = "<group>"; };
+		C11BF06D8E6862142E9D6F5B757BE506 /* UnderKeyboard-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnderKeyboard-prefix.pch"; sourceTree = "<group>"; };
+		C7C30A07A77D2AFBC6F08E620BA81EC7 /* UnderKeyboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UnderKeyboard.modulemap; sourceTree = "<group>"; };
+		C98C179C9A7C86EB97F509E9F6430380 /* Pods-KeyBoard-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KeyBoard-frameworks.sh"; sourceTree = "<group>"; };
+		CEA722516011B586950E6FE3B8B8CD8E /* UnderKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UnderKeyboard.release.xcconfig; sourceTree = "<group>"; };
+		D1F0D63D8F47B298788F109A1F11A6E0 /* SwiftPhoneNumberFormatter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftPhoneNumberFormatter.debug.xcconfig; sourceTree = "<group>"; };
+		D814DBA138CE8BCE348675A9A99C31CB /* UnderKeyboard */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UnderKeyboard; path = UnderKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E37EACFE4EACDEC50191B0EB78850FC9 /* PhoneFormattedTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneFormattedTextField.swift; path = PhoneNumberFormatter/Sources/PhoneFormattedTextField.swift; sourceTree = "<group>"; };
+		F16839D5A7ECDEBFE289DD4FB8250384 /* UnderKeyboard-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnderKeyboard-Info.plist"; sourceTree = "<group>"; };
+		FA06F3A9CB68FEFC5BD0956417C9279B /* PhoneFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneFormat.swift; path = PhoneNumberFormatter/Sources/ConfigRepo/PhoneFormat.swift; sourceTree = "<group>"; };
+		FE1F0CF973EBA0F1F3207BE93CE8C7BF /* SwiftPhoneNumberFormatter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftPhoneNumberFormatter-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		612AE286729EF69AE39D601C47C4122F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF15674E06913314439E974FD898BB7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97CDBC0203AD9EE5CBE1CEA92267AB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				765C35FDDA7B61DA2E0B7802B8F29CE9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCBC4877D425C5202957B9A75BEB741 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8971FFF9BE0C4A747A272A78BFA2D443 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		512C881AFB57B4A06DB827D1EBF57D72 /* SwiftPhoneNumberFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				BD1EC997F1F7036FBA675C427F2B4977 /* ConfigurationRepo.swift */,
+				47D36DA2BDF23F1D8424100825CBD8B8 /* FormattedTextFieldDelegate.swift */,
+				FA06F3A9CB68FEFC5BD0956417C9279B /* PhoneFormat.swift */,
+				E37EACFE4EACDEC50191B0EB78850FC9 /* PhoneFormattedTextField.swift */,
+				90B8A0F72440870C0541B05137F62887 /* PhoneFormatter.swift */,
+				5675880FBA61D1F7BBF75D22B8DE5EE5 /* Support Files */,
+			);
+			name = SwiftPhoneNumberFormatter;
+			path = SwiftPhoneNumberFormatter;
+			sourceTree = "<group>";
+		};
+		5675880FBA61D1F7BBF75D22B8DE5EE5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B27DECC16E4216C65D6C17FCF9A496F /* SwiftPhoneNumberFormatter.modulemap */,
+				7A6F28A046F67F1D8E14875FCB60BE4D /* SwiftPhoneNumberFormatter-dummy.m */,
+				4B78EDE1CC8750E37B63388E3EB262E0 /* SwiftPhoneNumberFormatter-Info.plist */,
+				2782F98C017E7EEC297024F8CC663F42 /* SwiftPhoneNumberFormatter-prefix.pch */,
+				FE1F0CF973EBA0F1F3207BE93CE8C7BF /* SwiftPhoneNumberFormatter-umbrella.h */,
+				D1F0D63D8F47B298788F109A1F11A6E0 /* SwiftPhoneNumberFormatter.debug.xcconfig */,
+				3D003253097148307C3A3B0F3CCECAFB /* SwiftPhoneNumberFormatter.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftPhoneNumberFormatter";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5B747D134BD7967E32ABD395A1FD522B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7972B4C99C6AF9F730B0DF6B4D12F3F /* Pods-KeyBoard */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8C43FB154911B309678DE724C8ED2DDD /* UnderKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8FA897D0600FD08499898555EC38D1A7 /* UnderKeyboardLayoutConstraint.swift */,
+				5AB7B2319A7CEBFE615313B0FE909144 /* UnderKeyboardObserver.swift */,
+				FF9272046B5E31B824213C147BCE1BC9 /* Support Files */,
+			);
+			name = UnderKeyboard;
+			path = UnderKeyboard;
+			sourceTree = "<group>";
+		};
+		B7972B4C99C6AF9F730B0DF6B4D12F3F /* Pods-KeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				8F26E516543FEC36EF5201E772E3EF5F /* Pods-KeyBoard.modulemap */,
+				160A1964429C5AFBDE42B86566045BB3 /* Pods-KeyBoard-acknowledgements.markdown */,
+				0763159C65335E88C333BC501398030C /* Pods-KeyBoard-acknowledgements.plist */,
+				875D386DBF07964D7BEBF5CE6EF60DB3 /* Pods-KeyBoard-dummy.m */,
+				C98C179C9A7C86EB97F509E9F6430380 /* Pods-KeyBoard-frameworks.sh */,
+				BB00B863D8C09BE159707D54346513C2 /* Pods-KeyBoard-Info.plist */,
+				096118AC579C714BFEDB307CC213F0FD /* Pods-KeyBoard-umbrella.h */,
+				1B31E3D02526D4D0A1429BBEDF41D363 /* Pods-KeyBoard.debug.xcconfig */,
+				9D01AF93354FCDB5C4332DD1CBE584FA /* Pods-KeyBoard.release.xcconfig */,
+			);
+			name = "Pods-KeyBoard";
+			path = "Target Support Files/Pods-KeyBoard";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				DE22F6918810E00C580EEE494ABCFFF5 /* Pods */,
+				E366977667F30E2C0A7C558D849B3D01 /* Products */,
+				5B747D134BD7967E32ABD395A1FD522B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE22F6918810E00C580EEE494ABCFFF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				512C881AFB57B4A06DB827D1EBF57D72 /* SwiftPhoneNumberFormatter */,
+				8C43FB154911B309678DE724C8ED2DDD /* UnderKeyboard */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E366977667F30E2C0A7C558D849B3D01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15E8928CF9948E8115722902373C9205 /* Pods-KeyBoard */,
+				B793F382517A9AB8806318DD243E87DC /* SwiftPhoneNumberFormatter */,
+				D814DBA138CE8BCE348675A9A99C31CB /* UnderKeyboard */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF9272046B5E31B824213C147BCE1BC9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7C30A07A77D2AFBC6F08E620BA81EC7 /* UnderKeyboard.modulemap */,
+				25E42732312A035B89740A4680607BFF /* UnderKeyboard-dummy.m */,
+				F16839D5A7ECDEBFE289DD4FB8250384 /* UnderKeyboard-Info.plist */,
+				C11BF06D8E6862142E9D6F5B757BE506 /* UnderKeyboard-prefix.pch */,
+				86311893BEBD7DCA0F41A9CEDDA00FE4 /* UnderKeyboard-umbrella.h */,
+				158C964EB6A530B528707B37E3C02FE4 /* UnderKeyboard.debug.xcconfig */,
+				CEA722516011B586950E6FE3B8B8CD8E /* UnderKeyboard.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UnderKeyboard";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		16F9B7FC857E6191FADF6554BCA0AEC1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F04A22741DE1BB150342A06ED4B211D2 /* SwiftPhoneNumberFormatter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F09AB495DEAC229793959EF603192F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A6A02703BC69A991DC82BCAA10C5AFA /* Pods-KeyBoard-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54797B24F2CEEE0ED3685415053ABD38 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A36A2152DB20B607A8EF0875B065DF5B /* UnderKeyboard-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		988BD13E76F617B407751343534A0D68 /* Pods-KeyBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53B7B06C33755C15E56637F441F10356 /* Build configuration list for PBXNativeTarget "Pods-KeyBoard" */;
+			buildPhases = (
+				2F09AB495DEAC229793959EF603192F3 /* Headers */,
+				5F8189529B03FFDB02BD66AFDA8DDBF8 /* Sources */,
+				EFCBC4877D425C5202957B9A75BEB741 /* Frameworks */,
+				B588FB5A8EC5A086E6B31920BAC7281A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB0E761FDEEF07AF6564A670990D3A46 /* PBXTargetDependency */,
+				A7005A42881F4807CE139B95925AC11E /* PBXTargetDependency */,
+			);
+			name = "Pods-KeyBoard";
+			productName = Pods_KeyBoard;
+			productReference = 15E8928CF9948E8115722902373C9205 /* Pods-KeyBoard */;
+			productType = "com.apple.product-type.framework";
+		};
+		A85581F0B02E795C37EFCC40F4AC3BE3 /* UnderKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF42E41FBB3BE51DA54377DF57E58F5 /* Build configuration list for PBXNativeTarget "UnderKeyboard" */;
+			buildPhases = (
+				54797B24F2CEEE0ED3685415053ABD38 /* Headers */,
+				1AC5C5823E294E79E55418222F414B83 /* Sources */,
+				612AE286729EF69AE39D601C47C4122F /* Frameworks */,
+				3AAEB1478D803496ECAFBEF574594F9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnderKeyboard;
+			productName = UnderKeyboard;
+			productReference = D814DBA138CE8BCE348675A9A99C31CB /* UnderKeyboard */;
+			productType = "com.apple.product-type.framework";
+		};
+		E8010486C81DF33F6D5B2D0A49F99327 /* SwiftPhoneNumberFormatter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE36C4805452EAB651CE7C706F438689 /* Build configuration list for PBXNativeTarget "SwiftPhoneNumberFormatter" */;
+			buildPhases = (
+				16F9B7FC857E6191FADF6554BCA0AEC1 /* Headers */,
+				E78AC043264F49554DAAA7748E916CFD /* Sources */,
+				A97CDBC0203AD9EE5CBE1CEA92267AB7 /* Frameworks */,
+				C17365BEB76C64DBCE05CA72ABA77330 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftPhoneNumberFormatter;
+			productName = SwiftPhoneNumberFormatter;
+			productReference = B793F382517A9AB8806318DD243E87DC /* SwiftPhoneNumberFormatter */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E366977667F30E2C0A7C558D849B3D01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				988BD13E76F617B407751343534A0D68 /* Pods-KeyBoard */,
+				E8010486C81DF33F6D5B2D0A49F99327 /* SwiftPhoneNumberFormatter */,
+				A85581F0B02E795C37EFCC40F4AC3BE3 /* UnderKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AAEB1478D803496ECAFBEF574594F9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B588FB5A8EC5A086E6B31920BAC7281A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C17365BEB76C64DBCE05CA72ABA77330 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AC5C5823E294E79E55418222F414B83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302BE617DC939201AD868987B38B4AB1 /* UnderKeyboard-dummy.m in Sources */,
+				D61D46BB8A99BF850C3B2B08472320B7 /* UnderKeyboardLayoutConstraint.swift in Sources */,
+				4BA86130D1D36797F8E502CBD3045C87 /* UnderKeyboardObserver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F8189529B03FFDB02BD66AFDA8DDBF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A039A4165975BE73305F2AE08CEFEAC /* Pods-KeyBoard-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E78AC043264F49554DAAA7748E916CFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				121059E9F0396EBFC17798B2CBD3C58C /* ConfigurationRepo.swift in Sources */,
+				0E912CFC384937C24003D0AEA4680122 /* FormattedTextFieldDelegate.swift in Sources */,
+				9990FAAC6E627E6F7A80108D06C30402 /* PhoneFormat.swift in Sources */,
+				095A788FAEDF4605FADF31130993D68E /* PhoneFormattedTextField.swift in Sources */,
+				8ED40834988B1AA754132FF523354330 /* PhoneFormatter.swift in Sources */,
+				1CE1445806AC3822AC54AC28A39F7A4D /* SwiftPhoneNumberFormatter-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7005A42881F4807CE139B95925AC11E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UnderKeyboard;
+			target = A85581F0B02E795C37EFCC40F4AC3BE3 /* UnderKeyboard */;
+			targetProxy = 1070155AE277AA7E594D7E4C18306849 /* PBXContainerItemProxy */;
+		};
+		EB0E761FDEEF07AF6564A670990D3A46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftPhoneNumberFormatter;
+			target = E8010486C81DF33F6D5B2D0A49F99327 /* SwiftPhoneNumberFormatter */;
+			targetProxy = 35447C43296A6087BB5D2874253BFBDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3DABBA11036DEE4138CFDCF8DA47DABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B31E3D02526D4D0A1429BBEDF41D363 /* Pods-KeyBoard.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KeyBoard/Pods-KeyBoard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KeyBoard/Pods-KeyBoard.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4360B07A3FBF46727052C41DD9A976EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1F0D63D8F47B298788F109A1F11A6E0 /* SwiftPhoneNumberFormatter.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftPhoneNumberFormatter/SwiftPhoneNumberFormatter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftPhoneNumberFormatter/SwiftPhoneNumberFormatter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftPhoneNumberFormatter/SwiftPhoneNumberFormatter.modulemap";
+				PRODUCT_MODULE_NAME = SwiftPhoneNumberFormatter;
+				PRODUCT_NAME = SwiftPhoneNumberFormatter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		80B2E6212712738F73B02D1B0F2A5C9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEA722516011B586950E6FE3B8B8CD8E /* UnderKeyboard.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UnderKeyboard/UnderKeyboard-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UnderKeyboard/UnderKeyboard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UnderKeyboard/UnderKeyboard.modulemap";
+				PRODUCT_MODULE_NAME = UnderKeyboard;
+				PRODUCT_NAME = UnderKeyboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD85FD90473CFBE797E4264E7BBC70AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E2BDA921A87475DC09BCA55D324FD9E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D01AF93354FCDB5C4332DD1CBE584FA /* Pods-KeyBoard.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KeyBoard/Pods-KeyBoard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KeyBoard/Pods-KeyBoard.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E5C9EDC04494EC8EF4ECC046EE60A59E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D003253097148307C3A3B0F3CCECAFB /* SwiftPhoneNumberFormatter.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftPhoneNumberFormatter/SwiftPhoneNumberFormatter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftPhoneNumberFormatter/SwiftPhoneNumberFormatter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftPhoneNumberFormatter/SwiftPhoneNumberFormatter.modulemap";
+				PRODUCT_MODULE_NAME = SwiftPhoneNumberFormatter;
+				PRODUCT_NAME = SwiftPhoneNumberFormatter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FC96480DB9479E843C1986261BF6AB0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 158C964EB6A530B528707B37E3C02FE4 /* UnderKeyboard.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UnderKeyboard/UnderKeyboard-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UnderKeyboard/UnderKeyboard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UnderKeyboard/UnderKeyboard.modulemap";
+				PRODUCT_MODULE_NAME = UnderKeyboard;
+				PRODUCT_NAME = UnderKeyboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4214E6946993DF02ED98D89047C64016 /* Debug */,
+				CD85FD90473CFBE797E4264E7BBC70AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53B7B06C33755C15E56637F441F10356 /* Build configuration list for PBXNativeTarget "Pods-KeyBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DABBA11036DEE4138CFDCF8DA47DABE /* Debug */,
+				E2BDA921A87475DC09BCA55D324FD9E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE36C4805452EAB651CE7C706F438689 /* Build configuration list for PBXNativeTarget "SwiftPhoneNumberFormatter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4360B07A3FBF46727052C41DD9A976EA /* Debug */,
+				E5C9EDC04494EC8EF4ECC046EE60A59E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF42E41FBB3BE51DA54377DF57E58F5 /* Build configuration list for PBXNativeTarget "UnderKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC96480DB9479E843C1986261BF6AB0A /* Debug */,
+				80B2E6212712738F73B02D1B0F2A5C9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,20 @@
+PODS:
+  - SwiftPhoneNumberFormatter (1.5)
+  - UnderKeyboard (13.0.2)
+
+DEPENDENCIES:
+  - SwiftPhoneNumberFormatter (~> 1.5)
+  - UnderKeyboard (~> 13.0)
+
+SPEC REPOS:
+  trunk:
+    - SwiftPhoneNumberFormatter
+    - UnderKeyboard
+
+SPEC CHECKSUMS:
+  SwiftPhoneNumberFormatter: 0cc91f4daa06dd606a9defb21048a75c36a771a2
+  UnderKeyboard: 79ea6feb497af99c1856aaae0ab8ded3c739f745
+
+PODFILE CHECKSUM: 4c55617e42f321da1656a6a225dc1b739b3440ff
+
+COCOAPODS: 1.11.2
