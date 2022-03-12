@@ -13,10 +13,7 @@ class TaskVC2: UIViewController {
         super.viewDidLoad()
 
         
-        UIView.animate(withDuration: 1) {
-            self.view.backgroundColor = .clear
-            
-        }
+        
     }
 
    
